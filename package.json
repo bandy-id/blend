@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run test:lint",
-    "test:lint": "eslint \"src/**/*.{ts,tsx}\" --fix"
+    "test:lint": "eslint \"src/**/*.{ts,tsx}\" --fix",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -23,9 +25,15 @@
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@storybook/addon-actions": "^6.1.10",
+    "@storybook/addon-essentials": "^6.1.10",
+    "@storybook/addon-links": "^6.1.10",
+    "@storybook/react": "^6.1.10",
     "@types/styled-components": "^5.1.5",
     "@typescript-eslint/eslint-plugin": "^4.9.1",
     "@typescript-eslint/parser": "^4.9.1",
+    "babel-loader": "^8.2.2",
     "eslint": "^7.15.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
